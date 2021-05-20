@@ -6,7 +6,7 @@ A PowerShell script to send SMS using a gateway, this was designed to work with 
 The SMS is sent using a GET request and the Uri `http(s)://<Name or IP Address>:<Port>/?to=<PhoneNumber>&content=<Message Text>`
 Response from the gateway must be in the format '200 <PhoneNumber>' to count as success, any other response is considered a failure.
 
-Use -Simulate or -WhatIf to test different scenarios
+Use `-Simulate` or `-WhatIf` to test different scenarios
 # Examples
 1. Send hello world to two numbers.
     ```
