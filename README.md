@@ -8,7 +8,7 @@ Response from the gateway must be in the format '200 <PhoneNumber>' to count as 
 
 Use `-Simulate` or `-WhatIf` to test different scenarios
 # Examples
-1. Send hello world to two numbers.
+1. Send test message to two numbers.
     ```
     PS C:\> .\Send-SMS.ps1 -URL http://192.168.1.1:4040/ -PhoneNumber '0123456789','0987654321' -Content "Hello World!"
     ```
