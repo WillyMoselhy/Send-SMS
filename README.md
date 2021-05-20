@@ -8,17 +8,19 @@ Response from the gateway must be in the format '200 <PhoneNumber>' to count as 
 
 Use -Simulate or -WhatIf to test different scenarios
 # Examples
-```
-PS C:\> .\Send-SMS.ps1 -URL http://192.168.1.1:4040/ -PhoneNumber '0123456789','0987654321' -Content "Hello World!"
-```
-Sends hello world to two numbers.
+1. Send hello world to two numbers.
+    ```
+    PS C:\> .\Send-SMS.ps1 -URL http://192.168.1.1:4040/ -PhoneNumber '0123456789','0987654321' -Content "Hello World!"
+    ```
 
-```
-PS C:\> .\Send-SMS.ps1 -URL http://192.168.1.1:4040/ -PhoneNumber '0123456789','0987654321' -Content "Hello World!" -Simulate Failure
-```
-Simulates failure for all messages, nothing is sent. Errors are returned in console with expected URI.
+2. Simulate failure for all messages
+    ```
+    PS C:\> .\Send-SMS.ps1 -URL http://192.168.1.1:4040/ -PhoneNumber '0123456789','0987654321' -Content "Hello World!" -Simulate Failure
+    ```
+    Nothing is sent. Errors are returned in console with expected URI.
 
-```
-PS C:\> .\Send-SMS.ps1 -URL http://192.168.1.1:4040/ -PhoneNumber '0123456789','0987654321' -Content "Hello World!" -Simulate Success
-```
-Simulates success for all messages, nothing is sent. Warnings are returned in console with expected URI.
+3. Simulate success for all messages,
+    ```
+    PS C:\> .\Send-SMS.ps1 -URL http://192.168.1.1:4040/ -PhoneNumber '0123456789','0987654321' -Content "Hello World!" -Simulate Success
+    ```
+    Nothing is sent. Warnings are returned in console with expected URI.
